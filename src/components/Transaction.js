@@ -3,7 +3,7 @@ import ConvertDate from "./ConvertDate";
 const Transaction = ({ transaction, onDelete, onToggle }) => {
   return (
     <div
-      className={`trans ${transaction.reminder && "reminder"}`}
+      className={`trans disable-select`}
       onDoubleClick={() => onToggle(transaction.id)}
     >
       <h3>

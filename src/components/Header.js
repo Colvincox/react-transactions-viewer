@@ -9,11 +9,10 @@ const Header = ({ title, onChangeUser, showAdd }) => {
   return (
     <header className="header">
       <h1>{title}</h1>
-      {location.pathname === "/" && (
-        <>
-          <DropDown onClick={onChangeUser} />
-        </>
-      )}
+
+      <>
+        <DropDown onClick={onChangeUser} />
+      </>
     </header>
   );
 };
